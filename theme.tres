@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=2 format=3]
+
+[sub_resource type="SystemFont" id="SystemFont_sheet"]
+font_names = PackedStringArray("Aptos", "Calibri", "Carlito", "Segoe UI", "Inter", "Liberation Sans", "Arial", "Sans-Serif")
+antialiasing = 1
+subpixel_positioning = 0
+
+[resource]
+default_font = SubResource("SystemFont_sheet")
+default_font_size = 14
+Label/colors/font_color = Color(0.2, 0.2, 0.2, 1)
+CellValue/base_type = &"Label"
+CellValue/colors/font_color = Color(0, 0.38, 0, 1)
+CellError/base_type = &"Label"
+CellError/colors/font_color = Color(0.612, 0, 0.024, 1)
+CellJump/base_type = &"Label"
+CellJump/colors/font_color = Color(0.612, 0.341, 0, 1)
+CellGoal/base_type = &"Label"
+CellGoal/colors/font_color = Color(0.0627, 0.486, 0.255, 1)
+CellNote/base_type = &"Label"
+CellNote/colors/font_color = Color(0.45, 0.45, 0.45, 1)
