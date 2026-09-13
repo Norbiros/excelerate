@@ -17,30 +17,46 @@ script = ExtResource("2_grid")
 tile_map_data = PackedByteArray("AAAgAAIAAAAAAAAAAAAhAAIAAAADAAAAAAAYAAYAAAAAAAAAAAAZAAYAAAAAAAAAAAAaAAYAAAAAAAAAAAAdAAYAAAAAAAAAAAAeAAYAAAAAAAAAAAAfAAYAAAACAAAAAAARAAcAAAAAAAAAAAASAAcAAAAAAAAAAAAOAAgAAAAAAAAAAAAPAAgAAAAAAAAAAAAAAAkAAAAAAAAAAAABAAkAAAAAAAAAAAACAAkAAAAAAAAAAAADAAkAAAAAAAAAAAAEAAkAAAAAAAAAAAAFAAkAAAAAAAAAAAAGAAkAAAAAAAAAAAAIAAkAAAAAAAAAAAAJAAkAAAAAAAAAAAAKAAkAAAABAAAAAAALAAkAAAAAAAAAAAAMAAkAAAAAAAAAAAAUAAoAAAAAAAAAAAAVAAoAAAAAAAAAAAAWAAoAAAACAAAAAAAXAAoAAAAAAAAAAAAbAAoAAAABAAAAAAAcAAoAAAABAAAAAAA=")
 tile_set = ExtResource("4_tiles")
 
-[node name="CellText" type="Node2D" parent="."]
+[node name="CellText" type="Node2D" parent="." unique_id=363140348]
 
-[node name="SheetTitle" type="Label" parent="CellText"]
+[node name="SheetTitle" type="Label" parent="CellText" unique_id=827527496]
+offset_left = 6.0
+offset_top = 48.0
+offset_right = 220.0
+offset_bottom = 96.0
 theme_override_font_sizes/font_size = 20
 text = "Haven Krakow Budget"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(0, 1)
 
-[node name="HowToMove" type="Label" parent="CellText"]
+[node name="HowToMove" type="Label" parent="CellText" unique_id=1137378711]
+offset_left = 6.0
+offset_top = 336.0
+offset_right = 309.0
+offset_bottom = 384.0
 theme_type_variation = &"CellNote"
 text = "Arrows or A / D to move, Space to jump"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(0, 7)
 
-[node name="TotalCost" type="Label" parent="CellText"]
+[node name="TotalCost" type="Label" parent="CellText" unique_id=842656755]
+offset_left = 6.0
+offset_top = 432.0
+offset_right = 90.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "Total Cost"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(0, 9)
 
-[node name="TotalCostJul" type="Label" parent="CellText"]
+[node name="TotalCostJul" type="Label" parent="CellText" unique_id=801075783]
+offset_left = 102.0
+offset_top = 432.0
+offset_right = 186.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "1,204"
 horizontal_alignment = 2
@@ -48,7 +64,11 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(1, 9)
 
-[node name="TotalCostAug" type="Label" parent="CellText"]
+[node name="TotalCostAug" type="Label" parent="CellText" unique_id=536919396]
+offset_left = 198.0
+offset_top = 432.0
+offset_right = 282.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "1,318"
 horizontal_alignment = 2
@@ -56,7 +76,11 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(2, 9)
 
-[node name="TotalCostSep" type="Label" parent="CellText"]
+[node name="TotalCostSep" type="Label" parent="CellText" unique_id=564034841]
+offset_left = 294.0
+offset_top = 432.0
+offset_right = 378.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "1,276"
 horizontal_alignment = 2
@@ -64,7 +88,11 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(3, 9)
 
-[node name="TotalCostOct" type="Label" parent="CellText"]
+[node name="TotalCostOct" type="Label" parent="CellText" unique_id=1483165131]
+offset_left = 390.0
+offset_top = 432.0
+offset_right = 474.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "1,452"
 horizontal_alignment = 2
@@ -72,7 +100,11 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(4, 9)
 
-[node name="TotalCostNov" type="Label" parent="CellText"]
+[node name="TotalCostNov" type="Label" parent="CellText" unique_id=262935581]
+offset_left = 486.0
+offset_top = 432.0
+offset_right = 570.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "1,530"
 horizontal_alignment = 2
@@ -80,7 +112,11 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(5, 9)
 
-[node name="TotalCostDec" type="Label" parent="CellText"]
+[node name="TotalCostDec" type="Label" parent="CellText" unique_id=845470728]
+offset_left = 582.0
+offset_top = 432.0
+offset_right = 666.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "1,611"
 horizontal_alignment = 2
@@ -88,21 +124,33 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(6, 9)
 
-[node name="ErrorHint" type="Label" parent="CellText"]
+[node name="ErrorHint" type="Label" parent="CellText" unique_id=977176493]
+offset_left = 774.0
+offset_top = 336.0
+offset_right = 1072.0
+offset_bottom = 384.0
 theme_type_variation = &"CellNote"
 text = "Red cells are errors. Don't touch them."
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(8, 7)
 
-[node name="Budget" type="Label" parent="CellText"]
+[node name="Budget" type="Label" parent="CellText" unique_id=1793291100]
+offset_left = 774.0
+offset_top = 432.0
+offset_right = 858.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "Budget"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(8, 9)
 
-[node name="BudgetJul" type="Label" parent="CellText"]
+[node name="BudgetJul" type="Label" parent="CellText" unique_id=1325322573]
+offset_left = 870.0
+offset_top = 432.0
+offset_right = 954.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "982"
 horizontal_alignment = 2
@@ -110,14 +158,22 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(9, 9)
 
-[node name="BudgetError" type="Label" parent="CellText"]
+[node name="BudgetError" type="Label" parent="CellText" unique_id=1644098070]
+offset_left = 966.0
+offset_top = 432.0
+offset_right = 1050.0
+offset_bottom = 480.0
 theme_type_variation = &"CellError"
 text = "#DIV/0!"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(10, 9)
 
-[node name="BudgetSep" type="Label" parent="CellText"]
+[node name="BudgetSep" type="Label" parent="CellText" unique_id=387234517]
+offset_left = 1062.0
+offset_top = 432.0
+offset_right = 1146.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "1,040"
 horizontal_alignment = 2
@@ -125,7 +181,11 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(11, 9)
 
-[node name="BudgetOct" type="Label" parent="CellText"]
+[node name="BudgetOct" type="Label" parent="CellText" unique_id=2075730021]
+offset_left = 1158.0
+offset_top = 432.0
+offset_right = 1242.0
+offset_bottom = 480.0
 theme_type_variation = &"CellValue"
 text = "1,105"
 horizontal_alignment = 2
@@ -133,14 +193,22 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(12, 9)
 
-[node name="Profit" type="Label" parent="CellText"]
+[node name="Profit" type="Label" parent="CellText" unique_id=289448649]
+offset_left = 1350.0
+offset_top = 384.0
+offset_right = 1434.0
+offset_bottom = 432.0
 theme_type_variation = &"CellValue"
 text = "Profit"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(14, 8)
 
-[node name="ProfitValue" type="Label" parent="CellText"]
+[node name="ProfitValue" type="Label" parent="CellText" unique_id=706692750]
+offset_left = 1446.0
+offset_top = 384.0
+offset_right = 1530.0
+offset_bottom = 432.0
 theme_type_variation = &"CellValue"
 text = "222"
 horizontal_alignment = 2
@@ -148,14 +216,22 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(15, 8)
 
-[node name="Margin" type="Label" parent="CellText"]
+[node name="Margin" type="Label" parent="CellText" unique_id=1244842965]
+offset_left = 1638.0
+offset_top = 336.0
+offset_right = 1722.0
+offset_bottom = 384.0
 theme_type_variation = &"CellValue"
 text = "Margin"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(17, 7)
 
-[node name="MarginValue" type="Label" parent="CellText"]
+[node name="MarginValue" type="Label" parent="CellText" unique_id=1280860466]
+offset_left = 1734.0
+offset_top = 336.0
+offset_right = 1818.0
+offset_bottom = 384.0
 theme_type_variation = &"CellValue"
 text = "18.4%"
 horizontal_alignment = 2
@@ -163,21 +239,33 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(18, 7)
 
-[node name="JumpHint" type="Label" parent="CellText"]
+[node name="JumpHint" type="Label" parent="CellText" unique_id=417217830]
+offset_left = 1830.0
+offset_top = 240.0
+offset_right = 2032.0
+offset_bottom = 288.0
 theme_type_variation = &"CellNote"
 text = "Yellow cells launch you up"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(19, 5)
 
-[node name="Bonus" type="Label" parent="CellText"]
+[node name="Bonus" type="Label" parent="CellText" unique_id=1565737865]
+offset_left = 1926.0
+offset_top = 480.0
+offset_right = 2010.0
+offset_bottom = 528.0
 theme_type_variation = &"CellValue"
 text = "Bonus"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(20, 10)
 
-[node name="BonusAug" type="Label" parent="CellText"]
+[node name="BonusAug" type="Label" parent="CellText" unique_id=1166388591]
+offset_left = 2022.0
+offset_top = 480.0
+offset_right = 2106.0
+offset_bottom = 528.0
 theme_type_variation = &"CellValue"
 text = "120"
 horizontal_alignment = 2
@@ -185,14 +273,22 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(21, 10)
 
-[node name="BonusJump" type="Label" parent="CellText"]
+[node name="BonusJump" type="Label" parent="CellText" unique_id=249765343]
+offset_left = 2118.0
+offset_top = 480.0
+offset_right = 2202.0
+offset_bottom = 528.0
 theme_type_variation = &"CellJump"
 text = "=JUMP()"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(22, 10)
 
-[node name="BonusValue" type="Label" parent="CellText"]
+[node name="BonusValue" type="Label" parent="CellText" unique_id=1436780327]
+offset_left = 2214.0
+offset_top = 480.0
+offset_right = 2298.0
+offset_bottom = 528.0
 theme_type_variation = &"CellValue"
 text = "150"
 horizontal_alignment = 2
@@ -200,14 +296,22 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(23, 10)
 
-[node name="Forecast" type="Label" parent="CellText"]
+[node name="Forecast" type="Label" parent="CellText" unique_id=873474006]
+offset_left = 2310.0
+offset_top = 288.0
+offset_right = 2394.0
+offset_bottom = 336.0
 theme_type_variation = &"CellValue"
 text = "Forecast"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(24, 6)
 
-[node name="ForecastQ1" type="Label" parent="CellText"]
+[node name="ForecastQ1" type="Label" parent="CellText" unique_id=827982295]
+offset_left = 2406.0
+offset_top = 288.0
+offset_right = 2490.0
+offset_bottom = 336.0
 theme_type_variation = &"CellValue"
 text = "2,100"
 horizontal_alignment = 2
@@ -215,7 +319,11 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(25, 6)
 
-[node name="ForecastQ2" type="Label" parent="CellText"]
+[node name="ForecastQ2" type="Label" parent="CellText" unique_id=957628918]
+offset_left = 2502.0
+offset_top = 288.0
+offset_right = 2586.0
+offset_bottom = 336.0
 theme_type_variation = &"CellValue"
 text = "2,340"
 horizontal_alignment = 2
@@ -223,28 +331,44 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(26, 6)
 
-[node name="PitErrorLeft" type="Label" parent="CellText"]
+[node name="PitErrorLeft" type="Label" parent="CellText" unique_id=1458884732]
+offset_left = 2598.0
+offset_top = 480.0
+offset_right = 2682.0
+offset_bottom = 528.0
 theme_type_variation = &"CellError"
 text = "#REF!"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(27, 10)
 
-[node name="PitErrorRight" type="Label" parent="CellText"]
+[node name="PitErrorRight" type="Label" parent="CellText" unique_id=1846132607]
+offset_left = 2694.0
+offset_top = 480.0
+offset_right = 2778.0
+offset_bottom = 528.0
 theme_type_variation = &"CellError"
 text = "#N/A"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(28, 10)
 
-[node name="Total" type="Label" parent="CellText"]
+[node name="Total" type="Label" parent="CellText" unique_id=667049579]
+offset_left = 2790.0
+offset_top = 288.0
+offset_right = 2874.0
+offset_bottom = 336.0
 theme_type_variation = &"CellValue"
 text = "Total"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(29, 6)
 
-[node name="TotalValue" type="Label" parent="CellText"]
+[node name="TotalValue" type="Label" parent="CellText" unique_id=2120024655]
+offset_left = 2886.0
+offset_top = 288.0
+offset_right = 2970.0
+offset_bottom = 336.0
 theme_type_variation = &"CellValue"
 text = "9,874"
 horizontal_alignment = 2
@@ -252,21 +376,33 @@ vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(30, 6)
 
-[node name="TotalJump" type="Label" parent="CellText"]
+[node name="TotalJump" type="Label" parent="CellText" unique_id=2132893442]
+offset_left = 2982.0
+offset_top = 288.0
+offset_right = 3066.0
+offset_bottom = 336.0
 theme_type_variation = &"CellJump"
 text = "=JUMP()"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(31, 6)
 
-[node name="Report" type="Label" parent="CellText"]
+[node name="Report" type="Label" parent="CellText" unique_id=1419895878]
+offset_left = 3078.0
+offset_top = 96.0
+offset_right = 3162.0
+offset_bottom = 144.0
 theme_type_variation = &"CellValue"
 text = "Report"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
 cell = Vector2i(32, 2)
 
-[node name="Goal" type="Label" parent="CellText"]
+[node name="Goal" type="Label" parent="CellText" unique_id=322970339]
+offset_left = 3174.0
+offset_top = 96.0
+offset_right = 3258.0
+offset_bottom = 144.0
 theme_type_variation = &"CellGoal"
 text = "=SAVE()"
 vertical_alignment = 1
