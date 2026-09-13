@@ -1,21 +1,21 @@
-[gd_scene format=3 uid="uid://3alkeelwrgbj"]
+[gd_scene load_steps=4 format=3]
 
-[ext_resource type="Script" path="res://player.gd" id="1_player"]
+[ext_resource type="Script" uid="uid://d1riigtwa7pkg" path="res://scenes/player/player.gd" id="1_player"]
 [ext_resource type="Texture2D" uid="uid://c5g0ehp1b0qmp" path="res://assets/player_cell.svg" id="2_texture"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape_player"]
 size = Vector2(40, 40)
 
-[node name="Player" type="CharacterBody2D" unique_id=119142083]
+[node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_player")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=744698203]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_texture")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=869287915]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape_player")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=529183875]
+[node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(320, -90)
 limit_left = -44
 limit_top = -142

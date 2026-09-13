@@ -1,11 +1,11 @@
-[gd_scene format=4 uid="uid://k72qapw50r7b"]
+[gd_scene format=4 uid="uid://8d10ilxawjak"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_main"]
-[ext_resource type="Script" path="res://worksheet_grid.gd" id="2_grid"]
-[ext_resource type="Script" path="res://cell_label.gd" id="3_cell_label"]
-[ext_resource type="TileSet" uid="uid://bfphtpan3yw78" path="res://spreadsheet_tileset.tres" id="4_tiles"]
-[ext_resource type="PackedScene" uid="uid://3alkeelwrgbj" path="res://player.tscn" id="5_player"]
-[ext_resource type="PackedScene" uid="uid://bd170tuj15rql" path="res://spreadsheet_ui.tscn" id="6_ui"]
+[ext_resource type="Script" uid="uid://7x83y3v2kauk" path="res://scenes/main/main.gd" id="1_main"]
+[ext_resource type="Script" uid="uid://d0ourr6o0p01c" path="res://scenes/worksheet/worksheet_grid.gd" id="2_grid"]
+[ext_resource type="Script" uid="uid://dodh88ou3q5ax" path="res://scenes/worksheet/cell_label.gd" id="3_cell_label"]
+[ext_resource type="TileSet" uid="uid://dkc8uq0qgml0r" path="res://scenes/worksheet/spreadsheet_tileset.tres" id="4_tiles"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="5_player"]
+[ext_resource type="PackedScene" uid="uid://c2uib6pc3huop" path="res://scenes/ui/spreadsheet_ui.tscn" id="6_ui"]
 
 [node name="Excelerate" type="Node2D" unique_id=1910395992]
 script = ExtResource("1_main")
@@ -21,14 +21,14 @@ tile_set = ExtResource("4_tiles")
 
 [node name="SheetTitle" type="Label" parent="CellText" unique_id=827527496]
 offset_left = 6.0
-offset_top = 48.0
+offset_top = 144.0
 offset_right = 220.0
-offset_bottom = 96.0
+offset_bottom = 192.0
 theme_override_font_sizes/font_size = 20
 text = "Haven Krakow Budget"
 vertical_alignment = 1
 script = ExtResource("3_cell_label")
-cell = Vector2i(2, 4)
+cell = Vector2i(0, 3)
 
 [node name="HowToMove" type="Label" parent="CellText" unique_id=1137378711]
 offset_left = 6.0

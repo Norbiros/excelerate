@@ -1,4 +1,4 @@
-[gd_resource type="Theme" format=3 uid="uid://fcduqk51pyjn"]
+[gd_resource type="Theme" format=3 uid="uid://c28mua83h8s5k"]
 
 [sub_resource type="SystemFont" id="SystemFont_sheet"]
 font_names = PackedStringArray("Aptos", "Calibri", "Carlito", "Segoe UI", "Inter", "Liberation Sans", "Arial", "Sans-Serif")

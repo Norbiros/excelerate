@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://bd170tuj15rql"]
+[gd_scene format=3 uid="uid://c2uib6pc3huop"]
 
-[ext_resource type="Script" path="res://spreadsheet_ui.gd" id="1_ui"]
+[ext_resource type="Script" uid="uid://bb81dfrwxejxo" path="res://scenes/ui/spreadsheet_ui.gd" id="1_ui"]
 
 [sub_resource type="StyleBoxFlat" id="StyleTitleBar"]
 bg_color = Color(0.0627, 0.486, 0.255, 1)
